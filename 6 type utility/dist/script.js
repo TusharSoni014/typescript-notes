@@ -22,3 +22,23 @@ const groupUsers = {
     "person 3": { age: 12 },
     "person 4": { age: 12 },
 };
+const orderLocation = {
+    country: "india",
+    state: "rajasthan",
+    status: "pending",
+};
+const orderLocations = {
+    name: "product 1",
+    phoneNumber: 123456789,
+    product: "macbook",
+};
+const addition = (a, b) => {
+    console.log(a + b);
+};
+class Person {
+    constructor(name, age, rollnumber) {
+        this.name = name;
+        this.age = age;
+        this.rollnumber = rollnumber;
+    }
+}
