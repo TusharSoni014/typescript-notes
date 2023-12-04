@@ -42,3 +42,13 @@ class Person {
         this.rollnumber = rollnumber;
     }
 }
+class SuperClass {
+    constructor(a, b) {
+        this.a = a;
+        this.b = b;
+    }
+}
+const classElem = {
+    a: "hello world",
+    b: "hello world",
+};

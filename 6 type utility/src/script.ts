@@ -123,8 +123,24 @@ class Person {
 }
 type ClassConstructorType = ConstructorParameters<typeof Person>;
 
-
 //--------------- ReturnType <Type> -------------------//
 //to find the types of return type in a given function
 
-type ReturnTypeExample = ReturnType<typeof addition>
+type ReturnTypeExample = ReturnType<typeof addition>;
+
+//--------------- InstanceType <Type> -------------------//
+
+class SuperClass {
+  constructor(public a: string, public b: string) {}
+}
+type InstanceTypeExample = InstanceType<typeof SuperClass>;
+
+const classElem: InstanceTypeExample = {
+  a: "hello world",
+  b: "hello world",
+};
+
+
+///-----------------------------------------------------------------///
+// can read about utility methods in typescript in the documentation //
+///-----------------------------------------------------------------///
