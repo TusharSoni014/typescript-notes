@@ -41,7 +41,11 @@ function App() {
         </ReactNodeChildren>
 
         {/*--- 4. Generics in React TS ---*/}
-        <Generics />
+        <Generics
+          value={""}
+          label="Search: "
+          onChange={() => console.log("on change detected")}
+        />
       </div>
     </>
   );
